@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: rgb(156,98,171);
+    background: radial-gradient(circle, rgba(156,98,171,1) 43%, rgba(219,40,40,1) 91%, rgba(252,70,107,1) 100%); */
+    /* background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(42,130,238,1) 30%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+/* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,130,238,1) 30%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(42,130,238,1) 37%, rgba(0,212,255,1) 73%, rgba(9,9,121,1) 100%);
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-family: cursive;
+
+}
+.head {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.crud {
+    width : 80%;
+    margin: auto;
+}
+.input input {
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-family: unset;
+    border: none;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #d2d8dd;
+    outline: none;
+}
+#total {
+    padding: 5px;
+    align-self: center;
+    background-color: orangered;
+    border-radius: 15px;
+}
+#total::before {
+    content: 'Total:';
+    position:relative;
+}
+input:focus , button:focus {
+    background-color: pink;
+    transform: scale( 1.05 );
+    color:rgb(3, 3, 201);
+}
+#search1:focus , #search2:focus {
+    background-color: pink;
+    transform: scale( 1.05 );
+    color:rgb(3, 3, 201);
+}
+.price {
+    display: flex;
+}
+.price input {
+    width: 20%;
+    /* display: flex; */
+}
+.input button  {
+    position: relative;
+    left: 9px;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 15px;
+    border: none;
+}
+
+.output #search{
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-family: unset;
+    border: none;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #d2d8dd;
+    outline: none;
+}
+.typeSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.typeSearch button {
+    padding: 5px;
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    font-family: unset;
+    border: none;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #d2d8dd;
+    outline: none;
+    
+}
+@keyframes mymove{
+    50%{box-shadow: 4px 10px 20px 20px;}
+}
+table {
+    animation: mymove 5s infinite;
+    
+    width: 100%;
+    text-align: center;
+    margin: 26px 0;
+    
+}
+table th {
+    text-transform: uppercase;
+}
+th , td {
+    padding: 5px;
+    background-color: #8e25dd8c;
+}
+#update , #delete {
+    font-family: unset;
+    padding: 12px 0;
+    margin: 0;
+    border: none;
+    font-size: large;
+    width: 76%;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+#deleteAll button{
+    margin: 5px 0;
+    width: 100%;
+    background: #8e25dd8c;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: x-large;
+    font-family: cursive;
+}
